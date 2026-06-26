@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sacred Devotional Embroidery Collection — over 100 ready-to-use Catholic embroidery designs for any machine. Lifetime access for just $5.90." />
+  <title>Sacred Devotional Embroidery Collection — Over 100 Ready-to-Use Designs</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="dns-prefetch" href="https://randomuser.me" />
+
+  <!-- Preload do mockup principal (LCP) -->
+  <link rel="preload" as="image" href="hero-mockup.webp" type="image/webp" fetchpriority="high" />
+
+  <!-- Tailwind pré-compilado (substitui o CDN runtime para carregar muito mais rápido) -->
+  <link rel="stylesheet" href="tailwind.min.css" />
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Manrope', sans-serif; color: #111; }
+    h1, h2, h3, h4 { font-family: 'Inter', sans-serif; }
+    .hero-gradient { background: linear-gradient(180deg, #F6F3EC 0%, #E8F1FF 100%); }
+    .cta-pulse { animation: pulse 2s infinite; }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); box-shadow: 0 12px 24px rgba(24,151,0,0.35); }
+      50%      { transform: scale(1.03); box-shadow: 0 16px 32px rgba(24,151,0,0.5); }
+    }
+    .pill { border-radius: 180px; }
+    .placeholder-img {
+      background: repeating-linear-gradient(45deg, #f0e9d6, #f0e9d6 12px, #e6dec5 12px, #e6dec5 24px);
+      display: flex; align-items: center; justify-content: center;
+      color: #1E3A5F; font-weight: 700;
+    }
+    /* Carousel */
+    .scrollbar-hide::-webkit-scrollbar { display: none; }
+    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+    .carousel-arrow {
+      background: #fff; color: #1E3A5F; width: 48px; height: 48px;
+      border-radius: 9999px; display: none; align-items: center; justify-content: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+      transition: transform .2s ease;
+    }
+    .carousel-arrow:hover { transform: scale(1.1); }
+    @media (min-width: 768px) { .carousel-arrow { display: flex; } }
+  </style>
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2486824241743289');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=2486824241743289&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <!-- UTMify - UTM Tracking -->
+  <script
+    src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+    data-utmify-prevent-subids
+    async
+    defer
+  ></script>
+
+  <!-- UTMify - Conversion Pixel -->
+  <script>
+    window.pixelId = "6a2899b0a2a0a7483b514f5d";
+    var a = document.createElement("script");
+    a.setAttribute("async", "");
+    a.setAttribute("defer", "");
+    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+    document.head.appendChild(a);
+  </script>
+  <!-- End UTMify -->
+</head>
+<body class="bg-white antialiased">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero-gradient pt-12 pb-20 px-5 flex flex-col items-center text-center">
+    <span class="bg-success text-white pill px-4 py-2.5 text-sm sm:text-base font-semibold inline-flex items-center gap-2">
+      <span aria-hidden="true">🔒</span> 100% SECURE AND PROTECTED CHECKOUT
+    </span>
+
+    <h1 class="font-heading font-extrabold uppercase text-primary tracking-tightx max-w-4xl mt-8
+               text-[34px] leading-[1.05] sm:text-[44px] md:text-[54px] lg:text-[60px] lg:leading-[1]">
+      Over 100 Catholic Embroidery Designs Ready to Use on Your Machine Starting Today
+    </h1>
+
+    <p class="italic font-bold text-[#242424] mt-6 text-lg sm:text-xl">
+      Compatible with all major home and professional machines
+    </p>
+
+    <p class="max-w-2xl mt-6 text-lg sm:text-xl text-[#1F1F1F] leading-relaxed">
+      Stop wasting hours digitizing design after design. Get the complete collection right now,
+      organized by category and ready to stitch — <strong>from the altar to the sacristy</strong>.
+    </p>
+
+    <!-- Product mockup -->
+    <div class="mt-10 w-full max-w-lg">
+      <picture>
+        <source srcset="hero-mockup.webp" type="image/webp" />
+        <img src="hero-mockup.jpg"
+             alt="+100 Catholic Designs — Sacred Devotional Embroidery Collection"
+             width="1100" height="1100"
+             class="w-full h-auto rounded-2xl shadow-soft"
+             loading="eager" fetchpriority="high" decoding="async" />
+      </picture>
+    </div>
+
+    <a href="#oferta"
+       class="cta-pulse inline-block mt-10 bg-success hover:bg-[#137A00] text-white font-bold uppercase
+              rounded-xl px-8 py-5 text-lg sm:text-xl tracking-tightx transition-colors">
+      I WANT MY COLLECTION NOW
+    </a>
+
+    <p class="mt-4 text-sm text-[#1F1F1F]/70">
+      Instant access after purchase • 7-day unconditional guarantee
+    </p>
+  </section>
+
+  <!-- ===================== PAIN / IDENTIFICATION ===================== -->
+  <section class="bg-white py-20 px-5">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="font-heading font-extrabold uppercase text-[#242424] tracking-tightx
+                 text-[28px] sm:text-[36px] md:text-[44px] leading-tight">
+        If you're into religious embroidery, this probably sounds familiar...
+      </h2>
+      <p class="mt-4 text-base sm:text-lg text-[#1F1F1F]/70 italic">
+        Professional embroiderer, hobbyist, or complete beginner — even if you <strong>haven't bought your machine yet</strong> and plan to start soon. If you love religious embroidery, this is for you.
+      </p>
+
+      <div class="mt-10 space-y-5 text-left">
+        <div class="flex gap-4 items-start bg-cream rounded-xl p-5">
+          <span class="text-secondary text-2xl leading-none" aria-hidden="true">✗</span>
+          <p class="text-lg sm:text-xl text-[#1F1F1F] leading-relaxed">
+            You've wasted <strong>hours hunting for a good design</strong> in online groups,
+            downloaded a corrupted file, and burned through thread for nothing.
+          </p>
+        </div>
+        <div class="flex gap-4 items-start bg-cream rounded-xl p-5">
+          <span class="text-secondary text-2xl leading-none" aria-hidden="true">✗</span>
+          <p class="text-lg sm:text-xl text-[#1F1F1F] leading-relaxed">
+            You've hesitated to <strong>get started (or stitch more)</strong> because building a real collection
+            of religious designs takes time, money — and you can never find everything you're looking for.
+          </p>
+        </div>
+        <div class="flex gap-4 items-start bg-cream rounded-xl p-5">
+          <span class="text-secondary text-2xl leading-none" aria-hidden="true">✗</span>
+          <p class="text-lg sm:text-xl text-[#1F1F1F] leading-relaxed">
+            You wanted to stitch a <strong>special religious gift</strong> — a veil, a scapular,
+            a prayer pouch, or a baptism keepsake — and you didn't have the design on hand
+            (or didn't have the machine yet, but you knew that one day you'd want to).
+          </p>
+        </div>
+        <div class="flex gap-4 items-start bg-cream rounded-xl p-5">
+          <span class="text-secondary text-2xl leading-none" aria-hidden="true">✗</span>
+          <p class="text-lg sm:text-xl text-[#1F1F1F] leading-relaxed">
+            You've paid (or found out they charge) a fortune for single designs — $5, $10, $15 each —
+            and you were still <strong>stuck with just one style</strong>.
+          </p>
+        </div>
+      </div>
+
+      <p class="mt-10 text-xl sm:text-2xl text-primary font-bold">
+        What if today you had <span class="text-secondary">all of that solved</span>
+        for less than the price of a coffee?
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== SOLUTION PRESENTATION ===================== -->
+  <section class="bg-cream py-20 px-5">
+    <div class="max-w-4xl mx-auto text-center">
+      <span class="text-secondary font-bold uppercase tracking-widest text-sm">The definitive solution</span>
+      <h2 class="font-heading font-extrabold uppercase text-primary tracking-tightx mt-4
+                 text-[32px] sm:text-[42px] md:text-[52px] leading-[1.05]">
+        Sacred Devotional Embroidery Collection
+      </h2>
+      <p class="mt-6 text-xl text-[#1F1F1F] leading-relaxed">
+        A curated collection of <strong>over 100 Catholic embroidery designs</strong> already digitized,
+        tested, and organized by category — ready to open and stitch.
+      </p>
+      <p class="mt-4 text-lg text-[#1F1F1F]/80">
+        No searching. No corrupted files. No lost sales.
+      </p>
+
+      <!-- Categories -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12 text-left">
+        <div class="bg-white rounded-xl p-5 shadow-card">
+          <h3 class="font-heading font-bold text-primary text-lg">Sacred Hearts</h3>
+          <p class="text-sm text-[#1F1F1F]/70 mt-1">Jesus and Mary</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-card">
+          <h3 class="font-heading font-bold text-primary text-lg">Our Ladies</h3>
+          <p class="text-sm text-[#1F1F1F]/70 mt-1">Lourdes, Fatima, Guadalupe and more</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-card">
+          <h3 class="font-heading font-bold text-primary text-lg">Crosses & Crucifixes</h3>
+          <p class="text-sm text-[#1F1F1F]/70 mt-1">Classic, ornate and devotional</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-card">
+          <h3 class="font-heading font-bold text-primary text-lg">Liturgical Symbols</h3>
+          <p class="text-sm text-[#1F1F1F]/70 mt-1">Chalice, host, IHS, monstrances</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-card">
+          <h3 class="font-heading font-bold text-primary text-lg">Angels & Cherubs</h3>
+          <p class="text-sm text-[#1F1F1F]/70 mt-1">For baptism and first communion</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-card">
+          <h3 class="font-heading font-bold text-primary text-lg">Faith Phrases</h3>
+          <p class="text-sm text-[#1F1F1F]/70 mt-1">Verses and prayers</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-card">
+          <h3 class="font-heading font-bold text-primary text-lg">Holy Spirit</h3>
+          <p class="text-sm text-[#1F1F1F]/70 mt-1">Dove and flames in variations</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-card">
+          <h3 class="font-heading font-bold text-primary text-lg">Special Dates</h3>
+          <p class="text-sm text-[#1F1F1F]/70 mt-1">Christmas, Easter and baptism</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY / WHAT YOU GET ===================== -->
+  <section class="bg-primary py-20 overflow-hidden">
+    <div class="max-w-6xl mx-auto text-center px-5">
+      <span class="text-secondary font-bold uppercase tracking-widest text-sm">What you'll receive</span>
+      <h2 class="font-heading font-extrabold uppercase text-white tracking-tightx mt-3
+                 text-[32px] sm:text-[42px] md:text-[52px] leading-[1.05]">
+        Take a look at some of the designs you'll be taking home
+      </h2>
+      <p class="mt-6 text-white/80 text-lg">
+        Every design was tested on a machine before making it into the collection.
+      </p>
+    </div>
+
+    <!-- 3x2 grid (6 images) -->
+    <div class="mt-12 max-w-5xl mx-auto px-5">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+        <picture>
+          <source srcset="imagens/855191d358ea0788366f3c1b5713f3b3.webp" type="image/webp" />
+          <img src="imagens/855191d358ea0788366f3c1b5713f3b3.jpg"
+               alt="Catholic embroidery — design 1" loading="lazy" decoding="async" width="760" height="760"
+               class="w-full aspect-square object-cover rounded-xl shadow-card border-2 border-white/20" />
+        </picture>
+        <picture>
+          <source srcset="imagens/986d5279e1fd90e39ab8a3e77f86ef9b.webp" type="image/webp" />
+          <img src="imagens/986d5279e1fd90e39ab8a3e77f86ef9b.jpg"
+               alt="Catholic embroidery — design 2" loading="lazy" decoding="async" width="760" height="760"
+               class="w-full aspect-square object-cover rounded-xl shadow-card border-2 border-white/20" />
+        </picture>
+        <picture>
+          <source srcset="imagens/image-1.webp" type="image/webp" />
+          <img src="imagens/image-1.jpg"
+               alt="Catholic embroidery — design 3" loading="lazy" decoding="async" width="760" height="760"
+               class="w-full aspect-square object-cover rounded-xl shadow-card border-2 border-white/20" />
+        </picture>
+        <picture>
+          <source srcset="imagens/image-2.webp" type="image/webp" />
+          <img src="imagens/image-2.jpg"
+               alt="Catholic embroidery — design 4" loading="lazy" decoding="async" width="760" height="760"
+               class="w-full aspect-square object-cover rounded-xl shadow-card border-2 border-white/20" />
+        </picture>
+        <picture>
+          <source srcset="imagens/image-4.webp" type="image/webp" />
+          <img src="imagens/image-4.jpg"
+               alt="Catholic embroidery — design 5" loading="lazy" decoding="async" width="760" height="760"
+               class="w-full aspect-square object-cover rounded-xl shadow-card border-2 border-white/20" />
+        </picture>
+        <picture>
+          <source srcset="imagens/855191d358ea0788366f3c1b5713f3b3.webp" type="image/webp" />
+          <img src="imagens/855191d358ea0788366f3c1b5713f3b3.jpg"
+               alt="Catholic embroidery — design 6" loading="lazy" decoding="async" width="760" height="760"
+               class="w-full aspect-square object-cover rounded-xl shadow-card border-2 border-white/20" />
+        </picture>
+      </div>
+    </div>
+
+    <div class="text-center mt-12 px-5">
+      <a href="#oferta"
+         class="inline-block bg-secondary hover:bg-[#E14C3A] text-white font-bold uppercase
+                rounded-xl px-8 py-4 text-lg transition-colors">
+        I WANT THE COMPLETE COLLECTION
+      </a>
+    </div>
+  </section>
+
+  <!-- ===================== BENEFITS ===================== -->
+  <section class="bg-white py-20 px-5">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="font-heading font-extrabold uppercase text-[#242424] tracking-tightx text-center
+                 text-[28px] sm:text-[36px] md:text-[44px] leading-tight">
+        What changes in your day-to-day starting today
+      </h2>
+
+      <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-8 mt-14">
+        <!-- Clock: More free time -->
+        <div class="text-center">
+          <div class="w-20 h-20 mx-auto bg-cream rounded-full flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6">
+              <circle cx="12" cy="12" r="9" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 7v5l3 2" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-semibold text-secondary text-xl mt-5">More free time</h3>
+          <p class="text-base text-[#1F1F1F] leading-7 mt-3">
+            No more searching. You open, you choose, you stitch — and you get hours back every week.
+          </p>
+        </div>
+
+        <!-- Speed: Fulfill more orders -->
+        <div class="text-center">
+          <div class="w-20 h-20 mx-auto bg-cream rounded-full flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 1 0-9-9" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 12l5-3" />
+              <circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-semibold text-secondary text-xl mt-5">More orders</h3>
+          <p class="text-base text-[#1F1F1F] leading-7 mt-3">
+            Never lose another order for lack of a design. Diversify and charge more.
+          </p>
+        </div>
+
+        <!-- Shield: More peace of mind -->
+        <div class="text-center">
+          <div class="w-20 h-20 mx-auto bg-cream rounded-full flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3l8 3v6c0 4.5-3.4 8.4-8 9-4.6-.6-8-4.5-8-9V6l8-3z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-semibold text-secondary text-xl mt-5">More peace of mind</h3>
+          <p class="text-base text-[#1F1F1F] leading-7 mt-3">
+            Tested designs, clean stitching, and a finish worthy of a vestment workshop.
+          </p>
+        </div>
+
+        <!-- Freedom: More independence -->
+        <div class="text-center">
+          <div class="w-20 h-20 mx-auto bg-cream rounded-full flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 12c1.5-4 5-6 9-6s7.5 2 9 6" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 12v3a3 3 0 0 0 3 3h0a3 3 0 0 0 3-3v-3" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 12v3a3 3 0 0 0 3 3h0a3 3 0 0 0 3-3v-3" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-semibold text-secondary text-xl mt-5">More independence</h3>
+          <p class="text-base text-[#1F1F1F] leading-7 mt-3">
+            Work from home, at your own pace, with extra income coming in every month.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BONUSES ===================== -->
+  <section class="bg-cream py-20 px-5">
+    <div class="max-w-5xl mx-auto text-center">
+      <span class="text-secondary font-bold uppercase tracking-widest text-sm">And you also get</span>
+      <h2 class="font-heading font-extrabold uppercase text-primary tracking-tightx mt-4
+                 text-[32px] sm:text-[42px] md:text-[52px] leading-[1.05]">
+        5 Bonuses worth more than the collection itself
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-6 mt-12 text-left">
+        <div class="bg-white rounded-xl p-6 shadow-card border-l-4 border-secondary">
+          <span class="text-xs font-bold text-secondary uppercase">Bonus 01</span>
+          <h3 class="font-heading font-bold text-primary text-xl mt-2">Suggested Pricing Chart</h3>
+          <p class="text-[#1F1F1F] mt-2">Know exactly how much to charge for each type of religious embroidery in your area.</p>
+          <p class="text-success font-bold mt-3">From $17 → free</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow-card border-l-4 border-secondary">
+          <span class="text-xs font-bold text-secondary uppercase">Bonus 02</span>
+          <h3 class="font-heading font-bold text-primary text-xl mt-2">Premium Crosses & Crucifixes Pack</h3>
+          <p class="text-[#1F1F1F] mt-2">+15 premium cross and crucifix designs in different styles — classic and ornate, perfect for vestments and liturgical pieces.</p>
+          <p class="text-success font-bold mt-3">From $22 → free</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow-card border-l-4 border-secondary md:col-span-2">
+          <span class="text-xs font-bold text-secondary uppercase">Bonus 03 ★ New</span>
+          <h3 class="font-heading font-bold text-primary text-xl mt-2">Premium Christian Pack</h3>
+          <p class="text-[#1F1F1F] mt-2">Get an additional collection of classic Christian symbols to expand your embroidery options even further.</p>
+          <p class="text-success font-bold mt-3">From $18 → free</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow-card border-l-4 border-secondary md:col-span-2">
+          <span class="text-xs font-bold text-secondary uppercase">Bonus 04 ★ New</span>
+          <h3 class="font-heading font-bold text-primary text-xl mt-2">Religious Labels Kit</h3>
+          <p class="text-[#1F1F1F] mt-2">Over 20 labels and tags <strong>ready to edit and print</strong> — perfect for baptism and first communion keepsakes, religious gifts, and custom orders. Personalize your creations with a professional touch.</p>
+          <p class="text-success font-bold mt-3">From $24 → free</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow-card border-l-4 border-secondary md:col-span-2">
+          <span class="text-xs font-bold text-secondary uppercase">Bonus 05</span>
+          <h3 class="font-heading font-bold text-primary text-xl mt-2">Lifetime Updates</h3>
+          <p class="text-[#1F1F1F] mt-2">Every new design that joins the collection is automatically added to your access. Forever.</p>
+          <p class="text-success font-bold mt-3">Value: priceless</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== URGENCY / PUNCH ===================== -->
+  <section class="bg-primary py-20 px-5">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="font-heading font-extrabold uppercase text-white tracking-tightx
+                 text-[28px] sm:text-[38px] md:text-[48px] leading-[1.05]">
+        How much more time and how many more orders will you lose searching for religious designs online?
+      </h2>
+
+      <ul class="mt-10 space-y-3 text-left max-w-sm mx-auto">
+        <li class="flex gap-3 items-center text-white text-lg sm:text-xl">
+          <span class="text-success font-bold text-2xl leading-none">✓</span>
+          <span>Fulfill more orders</span>
+        </li>
+        <li class="flex gap-3 items-center text-white text-lg sm:text-xl">
+          <span class="text-success font-bold text-2xl leading-none">✓</span>
+          <span>Produce faster</span>
+        </li>
+        <li class="flex gap-3 items-center text-white text-lg sm:text-xl">
+          <span class="text-success font-bold text-2xl leading-none">✓</span>
+          <span>Work with less stress</span>
+        </li>
+      </ul>
+
+      <a href="#oferta"
+         class="cta-pulse inline-block mt-10 bg-success hover:bg-[#137A00] text-white font-bold uppercase
+                rounded-xl px-8 py-5 text-lg sm:text-xl tracking-tightx transition-colors">
+        I WANT ACCESS AND TO START USING IT TODAY
+      </a>
+    </div>
+  </section>
+
+  <!-- ===================== UNIQUE OFFER ===================== -->
+  <section id="oferta" class="bg-white py-20 px-5">
+    <div class="max-w-2xl mx-auto">
+      <div class="text-center mb-10">
+        <span class="bg-secondary text-white pill px-4 py-2 text-sm font-bold uppercase">
+          One-time offer — today only
+        </span>
+        <h2 class="font-heading font-extrabold uppercase text-primary tracking-tightx mt-6
+                   text-[30px] sm:text-[38px] md:text-[46px] leading-[1.05]">
+          All of this for less than a single design
+        </h2>
+
+        <!-- Highlight badges -->
+        <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mt-8">
+          <span class="inline-flex items-center gap-1.5 bg-yellow-100 text-yellow-900 border border-yellow-300 pill px-3 py-1.5 text-xs sm:text-sm font-bold uppercase">
+            <span class="text-yellow-500" aria-hidden="true">⚡</span> Instant access
+          </span>
+          <span class="inline-flex items-center gap-1.5 bg-red-100 text-red-800 border border-red-300 pill px-3 py-1.5 text-xs sm:text-sm font-bold uppercase">
+            <span aria-hidden="true">🔥</span> 5 Exclusive bonuses
+          </span>
+          <span class="inline-flex items-center gap-1.5 bg-yellow-100 text-yellow-900 border border-yellow-300 pill px-3 py-1.5 text-xs sm:text-sm font-bold uppercase">
+            <span class="text-yellow-500" aria-hidden="true">⚡</span> Best seller
+          </span>
+          <span class="inline-flex items-center gap-1.5 bg-gray-900 text-white pill px-3 py-1.5 text-xs sm:text-sm font-bold uppercase">
+            <span aria-hidden="true">⏰</span> Last chance
+          </span>
+        </div>
+      </div>
+
+      <!-- SINGLE CARD -->
+      <div class="bg-gradient-to-b from-cream to-white border-4 border-success rounded-2xl p-8 sm:p-10 shadow-card relative">
+        <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-success text-white px-5 py-1.5 rounded-full text-sm font-bold uppercase whitespace-nowrap">
+          ★ Complete package
+        </div>
+
+        <!-- Product image -->
+        <div class="mt-4 max-w-sm mx-auto">
+          <picture>
+            <source srcset="pack-completo.webp" type="image/webp" />
+            <img src="pack-completo.jpg"
+                 alt="+100 Catholic Designs — Complete package"
+                 width="558" height="663"
+                 class="w-full h-auto rounded-xl shadow-card"
+                 loading="lazy" decoding="async" />
+          </picture>
+        </div>
+
+        <h3 class="font-heading font-extrabold text-primary text-center text-2xl sm:text-3xl mt-6">
+          Sacred Devotional Collection + 5 Bonuses
+        </h3>
+
+        <ul class="mt-8 space-y-3 text-[#1F1F1F]">
+          <li class="flex gap-3"><span class="text-success font-bold">✓</span> +100 Catholic embroidery designs organized by category</li>
+          <li class="flex gap-3"><span class="text-success font-bold">✓</span> Bonus 1: Suggested Pricing Chart</li>
+          <li class="flex gap-3"><span class="text-success font-bold">✓</span> Bonus 2: Premium Crosses & Crucifixes Pack (+15 premium designs)</li>
+          <li class="flex gap-3"><span class="text-success font-bold">✓</span> <strong>Bonus 3: Premium Christian Pack (extra classic Christian symbols)</strong></li>
+          <li class="flex gap-3"><span class="text-success font-bold">✓</span> <strong>Bonus 4: Religious Labels Kit (+20 labels ready to edit and print)</strong></li>
+          <li class="flex gap-3"><span class="text-success font-bold">✓</span> Bonus 5: Lifetime updates to the collection</li>
+          <li class="flex gap-3"><span class="text-success font-bold">✓</span> Instant access after payment</li>
+          <li class="flex gap-3"><span class="text-success font-bold">✓</span> Compatible with all major machines (.PES .DST .JEF .EXP .VP3 .VIP .HUS .XXX .EMD)</li>
+        </ul>
+
+        <div class="mt-8 text-center border-t border-dashed border-primary/20 pt-6">
+          <p class="text-red-600 line-through text-lg font-semibold">Was $59.00</p>
+          <p class="text-sm uppercase font-bold text-secondary mt-1">Today only</p>
+          <p class="font-heading font-extrabold text-success text-5xl sm:text-6xl mt-1">
+            $5<span class="text-3xl">.90</span>
+          </p>
+          <p class="text-sm text-[#1F1F1F]/70 mt-1">One-time payment · lifetime access</p>
+        </div>
+
+        <a id="btn-checkout-principal"
+           href="https://pay.hotmart.com/W106499025J?checkoutMode=10"
+           target="_blank" rel="noopener"
+           class="cta-pulse block text-center mt-8 bg-success hover:bg-[#137A00] text-white font-bold uppercase
+                  rounded-xl px-6 py-5 text-lg sm:text-xl tracking-tightx transition-colors">
+          I WANT ACCESS NOW
+        </a>
+
+        <div class="flex flex-wrap items-center justify-center gap-3 mt-6 text-sm text-[#1F1F1F]/70">
+          <span class="inline-flex items-center gap-1"><span aria-hidden="true">🔒</span> Secure checkout</span>
+          <span>•</span>
+          <span class="inline-flex items-center gap-1"><span class="text-yellow-500" aria-hidden="true">⚡</span> Instant access</span>
+          <span>•</span>
+          <span class="inline-flex items-center gap-1"><span aria-hidden="true">🛡️</span> 7-day guarantee</span>
+        </div>
+
+        <!-- How you receive it -->
+        <div class="mt-6 flex items-center justify-center gap-2 text-sm text-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+            <rect x="3" y="5" width="18" height="14" rx="2" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 7l9 6 9-6" />
+          </svg>
+          <span class="font-semibold">You receive everything instantly by email</span>
+        </div>
+
+        <!-- Secure payment -->
+        <div class="mt-6 border-t border-dashed border-primary/15 pt-5">
+          <div class="bg-primary/5 border-2 border-dashed border-primary/30 rounded-xl p-4 sm:p-5 flex items-center gap-4">
+            <div class="shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="9" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" />
+              </svg>
+            </div>
+            <div class="text-left">
+              <p class="font-heading font-extrabold uppercase text-primary text-base sm:text-lg tracking-tightx leading-tight">
+                Simple and secure payment
+              </p>
+              <p class="text-sm text-[#1F1F1F]/80 mt-1 leading-snug">
+                Payment is processed by Hotmart: <strong>credit card, PayPal</strong> and other methods accepted, completely securely.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GUARANTEE ===================== -->
+  <section class="bg-surface py-20 px-5">
+    <div class="max-w-3xl mx-auto bg-white rounded-2xl p-8 sm:p-12 shadow-card text-center">
+      <div class="w-24 h-24 mx-auto bg-success/10 rounded-full flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-14 h-14 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 3l8 3v6c0 4.5-3.4 8.4-8 9-4.6-.6-8-4.5-8-9V6l8-3z" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4" />
+        </svg>
+      </div>
+      <h2 class="font-heading font-extrabold uppercase text-primary tracking-tightx mt-6
+                 text-[26px] sm:text-[34px] md:text-[40px] leading-tight">
+        7-Day Unconditional Guarantee
+      </h2>
+      <p class="mt-6 text-lg sm:text-xl text-[#1F1F1F] leading-relaxed">
+        Access the collection, download the designs, test them on your machine. If within <strong>7 days</strong>
+        you feel it wasn't worth the investment, we'll refund <strong>100% of what you paid</strong>
+        with no questions and no hassle. The risk is on us.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section class="bg-white py-20 px-5">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="font-heading font-extrabold uppercase text-[#242424] tracking-tightx text-center
+                 text-[28px] sm:text-[36px] md:text-[44px] leading-tight">
+        What embroiderers who already have the collection are saying
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-6 mt-12">
+        <div class="bg-cream rounded-xl p-6 shadow-card">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg"
+                 alt="Photo of Emily D."
+                 width="56" height="56"
+                 class="w-14 h-14 rounded-full object-cover border-2 border-white shadow-md"
+                 loading="lazy" decoding="async" />
+            <div>
+              <p class="font-bold text-primary leading-tight">Emily D.</p>
+              <p class="text-xs text-[#1F1F1F]/60">Austin, USA</p>
+            </div>
+          </div>
+          <div class="text-yellow-400 text-lg mb-2" aria-hidden="true">★★★★★</div>
+          <p class="text-[#1F1F1F] leading-relaxed">
+            "Within a week I had already made my money back stitching baptism keepsakes.
+            The designs are clean and the finish looks like it came from a boutique."
+          </p>
+        </div>
+
+        <div class="bg-cream rounded-xl p-6 shadow-card">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="https://randomuser.me/api/portraits/women/45.jpg"
+                 alt="Photo of Sarah L."
+                 width="56" height="56"
+                 class="w-14 h-14 rounded-full object-cover border-2 border-white shadow-md"
+                 loading="lazy" decoding="async" />
+            <div>
+              <p class="font-bold text-primary leading-tight">Sarah L.</p>
+              <p class="text-xs text-[#1F1F1F]/60">Manchester, UK</p>
+            </div>
+          </div>
+          <div class="text-yellow-400 text-lg mb-2" aria-hidden="true">★★★★★</div>
+          <p class="text-[#1F1F1F] leading-relaxed">
+            "I used to pay $15 for a single design. Here I got over 100 for less than $20.
+            I had no idea something like this even existed."
+          </p>
+        </div>
+
+        <div class="bg-cream rounded-xl p-6 shadow-card">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="https://randomuser.me/api/portraits/women/79.jpg"
+                 alt="Photo of Karen M."
+                 width="56" height="56"
+                 class="w-14 h-14 rounded-full object-cover border-2 border-white shadow-md"
+                 loading="lazy" decoding="async" />
+            <div>
+              <p class="font-bold text-primary leading-tight">Karen M.</p>
+              <p class="text-xs text-[#1F1F1F]/60">Dublin, Ireland</p>
+            </div>
+          </div>
+          <div class="text-yellow-400 text-lg mb-2" aria-hidden="true">★★★★★</div>
+          <p class="text-[#1F1F1F] leading-relaxed">
+            "I make vestments for my local parish. The liturgical symbols category
+            saved me on a big Easter order."
+          </p>
+        </div>
+
+        <div class="bg-cream rounded-xl p-6 shadow-card">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="https://randomuser.me/api/portraits/women/52.jpg"
+                 alt="Photo of Jessica B."
+                 width="56" height="56"
+                 class="w-14 h-14 rounded-full object-cover border-2 border-white shadow-md"
+                 loading="lazy" decoding="async" />
+            <div>
+              <p class="font-bold text-primary leading-tight">Jessica B.</p>
+              <p class="text-xs text-[#1F1F1F]/60">Brisbane, Australia</p>
+            </div>
+          </div>
+          <div class="text-yellow-400 text-lg mb-2" aria-hidden="true">★★★★★</div>
+          <p class="text-[#1F1F1F] leading-relaxed">
+            "I bought it expecting basic designs and was surprised.
+            There's variety for Our Ladies, the Saints, and even first communion."
+          </p>
+        </div>
+
+        <div class="bg-cream rounded-xl p-6 shadow-card">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="https://randomuser.me/api/portraits/women/33.jpg"
+                 alt="Photo of Rachel R."
+                 width="56" height="56"
+                 class="w-14 h-14 rounded-full object-cover border-2 border-white shadow-md"
+                 loading="lazy" decoding="async" />
+            <div>
+              <p class="font-bold text-primary leading-tight">Rachel R.</p>
+              <p class="text-xs text-[#1F1F1F]/60">Toronto, Canada</p>
+            </div>
+          </div>
+          <div class="text-yellow-400 text-lg mb-2" aria-hidden="true">★★★★★</div>
+          <p class="text-[#1F1F1F] leading-relaxed">
+            "I paid by card directly. Everything arrived by email instantly.
+            The designs opened perfectly on my Brother."
+          </p>
+        </div>
+
+        <div class="bg-cream rounded-xl p-6 shadow-card">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="https://randomuser.me/api/portraits/women/90.jpg"
+                 alt="Photo of Linda V."
+                 width="56" height="56"
+                 class="w-14 h-14 rounded-full object-cover border-2 border-white shadow-md"
+                 loading="lazy" decoding="async" />
+            <div>
+              <p class="font-bold text-primary leading-tight">Linda V.</p>
+              <p class="text-xs text-[#1F1F1F]/60">Phoenix, USA</p>
+            </div>
+          </div>
+          <div class="text-yellow-400 text-lg mb-2" aria-hidden="true">★★★★★</div>
+          <p class="text-[#1F1F1F] leading-relaxed">
+            "I used to sell 3 pieces a week. After varying my designs with the collection
+            I now sell 10. Worth every penny."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="bg-cream py-20 px-5">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="font-heading font-extrabold uppercase text-primary tracking-tightx text-center
+                 text-[28px] sm:text-[36px] md:text-[44px] leading-tight">
+        Frequently Asked Questions
+      </h2>
+
+      <div class="mt-10 space-y-4">
+        <details class="bg-white rounded-xl p-5 shadow-card group">
+          <summary class="cursor-pointer font-bold text-primary text-lg flex justify-between items-center">
+            Will it work on my machine?
+            <span class="text-secondary transition-transform group-open:rotate-45 text-2xl leading-none">+</span>
+          </summary>
+          <p class="mt-3 text-[#1F1F1F] leading-relaxed">
+            Yes. The designs come in <strong>9 formats</strong> to cover all the major brands:
+            <strong>.PES</strong> (Brother / Babylock), <strong>.DST</strong> (Tajima),
+            <strong>.JEF</strong> (Janome), <strong>.EXP</strong> (Bernina / Melco),
+            <strong>.VP3</strong> (Husqvarna Viking), <strong>.VIP</strong> (Pfaff / Husqvarna),
+            <strong>.HUS</strong> (Husqvarna), <strong>.XXX</strong> (Singer) and
+            <strong>.EMD</strong> (Elna). Compatible with home and professional machines.
+          </p>
+        </details>
+
+        <details class="bg-white rounded-xl p-5 shadow-card group">
+          <summary class="cursor-pointer font-bold text-primary text-lg flex justify-between items-center">
+            How will I receive the collection after purchase?
+            <span class="text-secondary transition-transform group-open:rotate-45 text-2xl leading-none">+</span>
+          </summary>
+          <p class="mt-3 text-[#1F1F1F] leading-relaxed">
+            Access is unlocked <strong>instantly</strong> by email. You'll receive a link
+            to download all the files organized in folders by category.
+          </p>
+        </details>
+
+        <details class="bg-white rounded-xl p-5 shadow-card group">
+          <summary class="cursor-pointer font-bold text-primary text-lg flex justify-between items-center">
+            What payment methods are accepted?
+            <span class="text-secondary transition-transform group-open:rotate-45 text-2xl leading-none">+</span>
+          </summary>
+          <p class="mt-3 text-[#1F1F1F] leading-relaxed">
+            Payment is processed securely by Hotmart. You can pay by
+            credit card, PayPal, and other common methods, completely securely.
+          </p>
+        </details>
+
+        <details class="bg-white rounded-xl p-5 shadow-card group">
+          <summary class="cursor-pointer font-bold text-primary text-lg flex justify-between items-center">
+            Can I use the designs to sell embroidered items?
+            <span class="text-secondary transition-transform group-open:rotate-45 text-2xl leading-none">+</span>
+          </summary>
+          <p class="mt-3 text-[#1F1F1F] leading-relaxed">
+            Yes. The license is for personal and commercial use — you can stitch and sell
+            the pieces. What's not allowed is reselling the designs themselves.
+          </p>
+        </details>
+
+        <details class="bg-white rounded-xl p-5 shadow-card group">
+          <summary class="cursor-pointer font-bold text-primary text-lg flex justify-between items-center">
+            What if I don't like it?
+            <span class="text-secondary transition-transform group-open:rotate-45 text-2xl leading-none">+</span>
+          </summary>
+          <p class="mt-3 text-[#1F1F1F] leading-relaxed">
+            Within 7 days, you request a refund and get 100% of your money back.
+            No justification needed. The risk is on us.
+          </p>
+        </details>
+
+        <details class="bg-white rounded-xl p-5 shadow-card group">
+          <summary class="cursor-pointer font-bold text-primary text-lg flex justify-between items-center">
+            Is this $5.90 price only valid today?
+            <span class="text-secondary transition-transform group-open:rotate-45 text-2xl leading-none">+</span>
+          </summary>
+          <p class="mt-3 text-[#1F1F1F] leading-relaxed">
+            Yes. This is a promotional launch price. Once the offer ends,
+            the collection goes back to its full price. If you wait to decide, you'll pay more.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FINAL CTA ===================== -->
+  <section class="bg-primary py-20 px-5 text-center">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="font-heading font-extrabold uppercase text-white tracking-tightx
+                 text-[28px] sm:text-[38px] md:text-[48px] leading-[1.05]">
+        You have two options now
+      </h2>
+      <p class="mt-8 text-white/80 text-lg sm:text-xl leading-relaxed">
+        <strong>Option 1:</strong> close this page, keep searching for designs online, and
+        keep losing customers for lack of a design.
+      </p>
+      <p class="mt-4 text-white/80 text-lg sm:text-xl leading-relaxed">
+        <strong>Option 2:</strong> invest less than a coffee and have <strong>+100 sacred
+        designs + 5 bonuses (including the labels kit, the premium crosses pack, and the Christian pack)</strong> on your device today.
+      </p>
+
+      <a id="btn-cta-final" href="#oferta"
+         class="cta-pulse inline-block mt-10 bg-success hover:bg-[#137A00] text-white font-bold uppercase
+                rounded-xl px-8 py-5 text-lg sm:text-xl tracking-tightx transition-colors">
+        I WANT MY COLLECTION FOR $5.90
+      </a>
+
+      <p class="mt-5 text-white/60 text-sm">
+        100% secure payment • Instant access • 7-day guarantee
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="bg-[#0e1f33] text-white/70 py-10 px-5 text-center text-sm">
+    <p>© <span id="ano"></span> Sacred Devotional Embroidery Collection. All rights reserved.</p>
+    <p class="mt-2">
+      This site is not part of Facebook, Instagram, or Google. Testimonials reflect
+      individual experiences and do not guarantee results.
+    </p>
+    <p class="mt-4 space-x-3">
+      <a href="#" class="hover:text-white">Terms of Use</a>
+      <span>•</span>
+      <a href="#" class="hover:text-white">Privacy Policy</a>
+      <span>•</span>
+      <a href="#" class="hover:text-white">Support</a>
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById('ano').textContent = new Date().getFullYear();
+
+    // "What you receive" carousel
+    (function () {
+      const carousel = document.getElementById('receive-carousel');
+      const prev = document.getElementById('carousel-prev');
+      const next = document.getElementById('carousel-next');
+      if (!carousel) return;
+      function scrollStep(direction) {
+        const card = carousel.querySelector('.snap-center');
+        const gap = 24;
+        const step = card ? card.offsetWidth + gap : 300;
+        carousel.scrollBy({ left: direction * step, behavior: 'smooth' });
+      }
+      prev && prev.addEventListener('click', () => scrollStep(-1));
+      next && next.addEventListener('click', () => scrollStep(1));
+    })();
+  </script>
+</body>
+</html>

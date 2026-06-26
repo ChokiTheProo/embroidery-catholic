@@ -1,0 +1,11 @@
+# OS / editor junk
+Thumbs.db
+desktop.ini
+.DS_Store
+*.tmp
+.vscode/
+.idea/
+
+# Old unused source PNGs from the original clone (replaced by optimized webp/jpg)
+variacao_dibujos_catolicos_es.png
+fcf709ec-7e60-44c0-97c7-3eb8569a7ae2.png
